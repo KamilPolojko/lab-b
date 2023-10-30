@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: initial;
+}
+
+body{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+
+
+.wyszukiwarka{
+    position: fixed;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid darkgray;
+    width: 70vw;
+    height: 5vh;
+    border-radius: 10px;
+}
+
+#submit-search{
+    float: left;
+    position: absolute;
+    width: 15%;
+    height: 5vh;
+}
+
+.search{
+    height: 5vh;
+    width: 85%;
+    border: 1px solid darkgray;
+}
+
+
+
+
+.add-tasks{
+
+
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70vw;
+    height: 5vh;
+    background-color: whitesmoke;
+    z-index: 0;
+
+
+
+}
+
+.text-task{
+    height: 5vh;
+    border: 1px solid darkgray;
+    width: 33%;
+    margin-right: 5%;
+    border-radius: 10px;
+}
+
+.text-date{
+    height: 5vh;
+    border: 1px solid darkgray;
+    width: 33%;
+    margin-right: 5%;
+    border-radius: 10px;
+}
+
+.adding-tasks{
+    height: 5vh;
+    border: 1px solid darkgray;
+    width: 20%;
+    float: right;
+    border-radius: 10px;
+    background-color: #4691f6;
+    color: whitesmoke;
+    font-weight: bolder;
+    z-index: 1;
+}
+
+
+
+.svg-icon {
+    width: 1em;
+    height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: #4691f6;
+}
+
+.svg-icon circle {
+    stroke: #4691f6;
+    stroke-width: 1;
+}
+
+
+
+.responsive-list li {
+    position: relative;
+    border: 1px dashed #ccc;
+    margin: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    flex: 1;
+    flex-grow: inherit;
+
+}
+
+.responsive-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    left: 50%;
+    margin-left: 14%;
+    width: 70vw;
+    height: 14vh;
+
+}
+
+
+li .delete-btn{
+
+    float: right;
+    padding: 5px;
+    width: 4vw;
+    height: 3vh;
+    background-color: red;
+
+
+}
+
+
+li p{
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+    float: left;
+
+}
+
+li input{
+    border: black solid 2px;
+    float: left;
+    width: 20%;
+    margin-left: 25px;
+
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    .responsive-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: 25%;
+        left: 50%;
+        margin-left: 14%;
+        width: 70vw;
+        height: 14vh;
+    }
+}
